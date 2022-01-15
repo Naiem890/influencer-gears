@@ -96,6 +96,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.hero__img img {
+  width: 100%;
+}
 
 /* =================================== */
 /*  Products Section */
@@ -229,10 +232,33 @@ footer p {
   .container {
     /* background-color: blue; */
   }
+  .hero .container {
+    /* background-color: wheat; */
+    height: auto;
+    display: grid;
+    row-gap: 2.4rem;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    justify-items: center;
+    text-align: center;
+  }
   body {
     /* font-size: 56%; */
   }
   .products {
-    grid-template-columns: repeat(1, 84%);
+    grid-template-columns: repeat(1, 100%);
   }
+  .hero__img {
+    display: flex;
+    justify-content: center;
+  }
+  .hero__img img {
+    width: 70%;
+  }
+  .btn,
+.btn:link,
+.btn:visited{
+  margin-top: 2rem;
+  /* color:black; */
+  font-size: 2rem;
 }
