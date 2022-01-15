@@ -213,9 +213,8 @@ header {
   outline-color: var(--mainColor);
 }
 button.btn {
-  /* text-align: right; */
   height: 4.6rem;
-  width: 120%;
+
   border-radius: 0;
   border: none;
   cursor: pointer;
