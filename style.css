@@ -37,8 +37,9 @@ h1 {
 h3 {
   font-size: 2.8rem;
   font-weight: 600;
-  line-height: 2.5;
+  /* line-height: 2.5; */
   text-align: center;
+  margin-bottom: 2.4rem;
 }
 h4 {
   font-size: 2.4rem;
@@ -99,7 +100,9 @@ header {
   align-items: center;
   /* background-color: red; */
 }
-
+.logo-box img {
+  width: 24rem;
+}
 .hero .container {
   /* background-color: wheat; */
   /* height: 80vh; */
@@ -212,6 +215,9 @@ header {
 .newsletter input:focus {
   outline-color: var(--mainColor);
 }
+/* .newsletter h3 {
+  line-height: 1;
+} */
 button.btn {
   height: 4.6rem;
 
@@ -271,6 +277,10 @@ footer p {
 @media (max-width: 900px) {
   html {
     font-size: 58%;
+  }
+  .logo-box {
+    display: flex;
+    justify-content: center;
   }
   .container {
     /* background-color: red; */
@@ -346,5 +356,16 @@ footer p {
     display: flex;
     flex-direction: column;
     gap: 0;
+  }
+}
+@media (max-width: 270px) {
+  .logo-box img {
+    width: 100;
+  }
+  html {
+    font-size: 35%;
+  }
+  h1 {
+    font-size: 4.2rem;
   }
 }
