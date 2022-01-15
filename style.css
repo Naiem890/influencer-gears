@@ -6,6 +6,10 @@
   --gray: #787885;
   --Poppins: "Poppins", sans-serif;
 }
+
+/* =================================== */
+/*  General CSS */
+/* =================================== */
 * {
   padding: 0;
   margin: 0;
@@ -51,23 +55,6 @@ a:visited {
 .fa-arrow-right {
   padding-left: 0.8rem;
 }
-header {
-  height: 9.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* background-color: red; */
-}
-
-.hero .container {
-  /* background-color: wheat; */
-  /* height: 80vh; */
-  display: grid;
-  column-gap: 4.6rem;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: end;
-}
 .btn,
 .btn:link,
 .btn:visited {
@@ -88,6 +75,29 @@ header {
   text-align: right;
   color: var(--mainColor);
 }
+
+/* =================================== */
+/*  Header & Hero  Section */
+/* =================================== */
+
+header {
+  height: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.hero .container {
+  /* background-color: wheat; */
+  /* height: 80vh; */
+  display: grid;
+  column-gap: 4.6rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: end;
+}
+
 .hero__description {
   font-weight: 600;
   margin: 1.6rem 0rem;
@@ -166,6 +176,10 @@ header {
   width: 70%;
 }
 
+/* =================================== */
+/*  Footer Section */
+/* =================================== */
+
 footer {
   padding: 5rem 0rem;
   text-align: center;
@@ -202,6 +216,12 @@ footer p {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+/* =================================== */
+/*  Media Query Section  */
+/* =================================== */
+
+/* For Tabs  */
 
 @media (max-width: 900px) {
   html {
@@ -241,9 +261,12 @@ footer p {
     font-size: 2rem;
   }
 }
-@media (max-width: 544px) {
+
+/* For Smaller Devices  */
+
+@media (max-width: 576px) {
   html {
-    font-size: 55%;
+    /* font-size: 55%; */
   }
   .container {
     /* background-color: blue; */
@@ -259,7 +282,7 @@ footer p {
   }
 
   .products {
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(1, 95%);
   }
   .hero__img {
     display: flex;
