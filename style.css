@@ -358,6 +358,7 @@ footer p {
     gap: 0;
   }
 }
+/* For More Smaller Devices  */
 @media (max-width: 270px) {
   .logo-box img {
     width: 100;
