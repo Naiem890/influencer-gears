@@ -83,6 +83,7 @@ a:visited {
 .btn-text,
 .btn-text:link,
 .btn-text:visited {
+  font-weight: 700;
   grid-column: 1/ -1;
   display: block;
   text-align: right;
@@ -358,7 +359,7 @@ footer p {
     gap: 0;
   }
 }
-/* For More Smaller Devices  */
+/* For Devices bellow 270px */
 @media (max-width: 270px) {
   .logo-box img {
     width: 100;
