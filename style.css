@@ -191,14 +191,14 @@ header {
   align-items: center;
 }
 .newsletter input {
-  /* width: 70%; */
   font: inherit;
-  display: block;
   height: 4.6rem;
   margin: 2.4rem 0rem;
   padding: 1.2rem;
-  border: 2px solid var(--mainColor);
-  outline: var(--gray);
+  outline-color: var(--gray);
+}
+.newsletter input:focus {
+  outline-color: var(--mainColor);
 }
 button.btn {
   height: 4.6rem;
